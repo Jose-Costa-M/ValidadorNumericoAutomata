@@ -1,0 +1,108 @@
+:root{
+    --blue: #044474;
+    --bluex: #062d49;
+    --ligth: #ffffff;
+    --black: #000000;
+}
+
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    background-image: url(img/fondos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.5); 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    
+    
+}
+.container{
+    z-index: 99;
+    position: relative;
+    
+
+}
+.impresion{
+    background-color: var(--blue);
+    color: var(--ligth);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    
+    
+}
+
+.formulario{
+    background-color: var(--ligth);
+    color: var(--black);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;    
+
+}
+
+.formulario input{
+    width: 98%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--blue);
+    background-color: var(--ligth);
+    color: var(--black);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+}
+
+.formulario input:focus{
+    outline: none;
+}
+
+.formulario input[type="submit"]{
+    background-color: var(--blue);
+    color: var(--ligth);
+    border: none;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: var(--bluex);
+}
+
+.formulario input[type="submit"]:focus{
+    outline: none;
+}
+
+.formulario input[type="submit"]:active{
+    background-color: var(--bluex);
+}
+
+.formulario input[type="submit"]:disabled{
+    background-color: var(--blue);
+    color: var(--ligth);
+    border: none;
+    cursor: not-allowed;
+}
+
+.formulario input[type="submit"]:disabled:hover{
+    background-color: var(--blue);
+    color: var(--ligth);
+    border: none;
+    cursor: not-allowed;
+}
+
+.formulario input[type="submit"]:disabled:focus{
+    outline: none;
+}
+
+
+
+

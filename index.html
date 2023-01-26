@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index">
+    <meta name="description" content="Validación de números reales">
+    <meta name="author" content="José Miguel, Carlos Parra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de números reales</title>
+    <meta name="keywords" content="Autómata, Validador de números reales, números, Teoría Computacional, Autómata finito determinista, Autómata determinista">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link href= "https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">  
+</head>
+  <body >
+
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12 mt-5 mb-5">
+            <h1 class="mb-5 text-center" style="color:white;">Validación de números reales</h1>
+            <!--insertamos la imagen del automata-->
+            <div class="text-center mb-4">
+              <img src="problema1.jpg" class="img-fluid" alt="automata">
+            </div>
+         
+            <div class="formulario">
+          <form id ="cadenaValidar" name="cadenaValidar" action="" >
+            
+            <div class="mb-3">
+                <label for="numero" class="form-label">Ingresa el número a evaluar</label>
+              <input requierd type="text" class="form-control" id="cadenav" name="cadenav" placeholder="Ingrese un número">
+            </div>
+            <button type="submit" class="btn btn-primary mb-5" id="submit">Validar</button>
+            
+            <!--Aqui se mostrara el resultado de la validación-->
+            <div class="mb-3" >
+              <h3 class="mb-3 text-center">Resultado</h3>
+              <div id="resultado" class="mt-2 mb-3"></div>
+                <!--Titulo del recorrido-->
+                <h3 class="mb-3 text-center">Recorrido</h3>
+                <!--Aqui se mostrara el recorrido del automata-->
+                <div id="recorrido" class="mt-4 mb-2"></div>
+            </div>
+
+          </form>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+       <!--ParticleJS-->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="main.js"></script>     
+
+      <!--ParticleJS-->
+      
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
